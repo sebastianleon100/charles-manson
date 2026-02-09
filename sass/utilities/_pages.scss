@@ -1,0 +1,35 @@
+.login-section {
+  min-height: calc(100vh - 80px);
+  @include flex-center;
+}
+
+.login-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 40px;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-strong;
+  @include glass;
+
+  h2 {
+    text-align: center;
+  }
+
+  .login-text {
+    text-align: center;
+    color: #9c9c9c;
+    margin-bottom: 26px;
+  }
+}
+
+.btn-login {
+  background: linear-gradient(135deg, $accent, $accent-dark);
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(243,156,18,0.4);
+  }
+}
