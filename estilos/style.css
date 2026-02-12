@@ -10,7 +10,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body, p, span, li, a {
+  color: #9a9a9a !important;
+}
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #0e0e0e;
@@ -20,6 +22,7 @@ body {
 }
 
 /* ===================== NAVBAR ===================== */
+
 .main-navbar {
   display: flex;
   align-items: center;
@@ -554,6 +557,7 @@ section.container img {
 /* =====================
    FOOTER LOGIN
 ===================== */
+
 .login-footer {
   text-align: center;
   margin-top: 22px;
@@ -599,6 +603,37 @@ section.container img {
   .footer {
     text-align: center;
   }
+  .main-navbar {
+    position: sticky; /* clave → no tapa contenido */
+    top: 0;
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* logo más chico */
+  .logo {
+    font-size: 18px;
+  }
+
+  /* menú vertical */
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+    padding: 8px;
+  }
+
+  /* eliminar espacio extra del body si lo tenías */
+  body {
+    padding-top: 0;
+  }
 }
+
 
 /*# sourceMappingURL=style.css.map */
